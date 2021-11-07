@@ -1,10 +1,13 @@
 $bgColorElement: #fff;
-$bgColorElement1:#1D827A;
-$bgColorBody:#41C9BD;
-$textColor: #2B8982;
+$bgColorElement1:navy;
+$bgColorBody: rgb(200, 200, 253);
+$textColor: navy;
 $textColor1:#fff;
-$borderColor: #439790;
+$borderColor: navy;
 
+div{
+display: flex;
+justify-content: center;
 
 form {
     background-color: $bgColorElement;
@@ -15,18 +18,23 @@ form {
     border: 1px dashed white;
     padding: 5px;
     border-radius: 4px;
-    width: 30%;
+    width: 20%;
     
-    input,
-    select,
-    option {
+    input {
         color: $textColor;
         border: 1px solid $borderColor;
         border-radius: 3px;
         line-height: 12px;
         padding: 10px 0px 10px 8px;
     }
-    input:hover {
+    select {
+    color: $textColor;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    padding: 8px 0px 8px 8px;
+    }
+    input:hover,
+    select:hover {
         background-color: $bgColorBody;
     }
     input::placeholder,
@@ -34,8 +42,7 @@ form {
         font-size: 18px;
         color: $textColor;
     }
-    button,
-    #reset {
+    button {
         color: $textColor1;
         font-size: 18px;
         background-color: $bgColorElement1;
@@ -46,5 +53,7 @@ form {
     }
      button:hover {
      background-color: $bgColorBody;
+     color: $textColor;
  }
+}
 }

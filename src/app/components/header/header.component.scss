@@ -1,24 +1,37 @@
 header {
     display: flex;
-    justify-content: flex-start;
+    //justify-content: flex-start;
+    justify-content: center;
     padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: rgba(19, 113, 126, 0.5);
-    border: 3px solid rgba(2, 2, 143, 0.76);
+    background-color:  rgb(200, 200, 253);
+    border: 3px solid navy;
     border-style: inset;
     border-radius: 10px;
+    height: 60px;
     .list, 
     .add {
         //margin-right: auto;
-        padding: 12px;
-        font-size: 28px;
+        padding: 0 15px 0 15px;
+        font-size: 18px;
         font-weight: 700;
-        margin-left: 50px;
+        //margin-left: 80px;
+        margin-top: 5px;
         font-style: italic;
-        color: navy;
         text-decoration: none;
+        border-radius: 6px;
+        border: 3px solid #fff;
+        background-color: navy;
+        height: 50px;
+    }
+    .add{
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
     }
 }
          
