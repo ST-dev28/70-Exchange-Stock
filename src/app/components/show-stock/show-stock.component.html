@@ -1,0 +1,25 @@
+<br>
+<div *ngIf="stock!==undefined">
+
+    <form (ngSubmit)="onSubmit()">
+        <input type="text" name="name" placeholder="company name" [(ngModel)]="stock.name" ngModel required>
+        <br>
+        <input type="text" name="code" placeholder="code" [(ngModel)]="stock.code" ngModel readonly>
+        <br>
+        <input type="number" name="price" placeholder="price" [(ngModel)]="stock.price" ngModel required>
+        <br>
+        <input type="number" name="previousPrice" placeholder="previous price" [(ngModel)]="stock.previousPrice" ngModel readonly>
+        <br>
+        <input type="text" name="exchange" placeholder="exchange name" [(ngModel)]="stock.exchange" ngModel required>
+        <br>
+        <select name="favorite" [(ngModel)]="stock.favorite" ngModel required>
+            <option value="" disabled selected>Like or Not</option>
+            <option value="false">Not favorite</option>
+            <option value="true">Favorite</option>
+        </select>
+        <br>
+        <button>Submit</button>
+        <br>
+    </form>
+
+</div>

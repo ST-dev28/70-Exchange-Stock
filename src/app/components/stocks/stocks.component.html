@@ -1,0 +1,7 @@
+<h1>Stock exchange!</h1>
+
+<ul>
+    <li *ngFor="let stock of stocks">{{stock.name}} / {{stock.price}} / {{stock.previousPrice}} / {{stock.favorite}}
+        <a [routerLink]="['/stock', stock.code]">Info</a>
+    </li>
+</ul>

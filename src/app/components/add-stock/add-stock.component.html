@@ -1,0 +1,25 @@
+<br>
+<br>
+<br>
+
+<form (ngSubmit)="onSubmit(addForm)" #addForm="ngForm">
+    <input type="text" name="name" placeholder="company name" ngModel required>
+    <br>
+    <input type="text" name="code" placeholder="code" ngModel required>
+    <br>
+    <input type="number" name="price" placeholder="price" ngModel required>
+    <br>
+    <input type="number" name="previousPrice" placeholder="previous price" ngModel required>
+    <br>
+    <input type="text" name="exchange" placeholder="exchange name" ngModel required>
+    <br>
+    <select name="favorite" ngModel required>
+        <option value="" disabled selected>Like or Not</option>
+        <option value="0">Not favorite</option>
+        <option value="1">Favorite</option>
+    </select>
+    <br>
+    <button>Submit</button>
+    <br>
+
+</form>

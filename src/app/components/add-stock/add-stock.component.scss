@@ -1,0 +1,50 @@
+$bgColorElement: #fff;
+$bgColorElement1:#1D827A;
+$bgColorBody:#41C9BD;
+$textColor: #2B8982;
+$textColor1:#fff;
+$borderColor: #439790;
+
+
+form {
+    background-color: $bgColorElement;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px;
+    border: 1px dashed white;
+    padding: 5px;
+    border-radius: 4px;
+    width: 30%;
+    
+    input,
+    select,
+    option {
+        color: $textColor;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        line-height: 12px;
+        padding: 10px 0px 10px 8px;
+    }
+    input:hover {
+        background-color: $bgColorBody;
+    }
+    input::placeholder,
+    select {
+        font-size: 18px;
+        color: $textColor;
+    }
+    button,
+    #reset {
+        color: $textColor1;
+        font-size: 18px;
+        background-color: $bgColorElement1;
+        border: none;
+        border-radius: 3px;
+        line-height: 18px;
+        padding: 10px 30px;
+    }
+     button:hover {
+     background-color: $bgColorBody;
+ }
+}

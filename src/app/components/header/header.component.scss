@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(19, 113, 126, 0.5);
+    border: 3px solid rgba(2, 2, 143, 0.76);
+    border-style: inset;
+    border-radius: 10px;
+    .list, 
+    .add {
+        //margin-right: auto;
+        padding: 12px;
+        font-size: 28px;
+        font-weight: 700;
+        margin-left: 50px;
+        font-style: italic;
+        color: navy;
+        text-decoration: none;
+    }
+}
+         
