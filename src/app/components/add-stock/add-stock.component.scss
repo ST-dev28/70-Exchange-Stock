@@ -5,12 +5,21 @@ $textColor: navy;
 $textColor1:#fff;
 $borderColor: navy;
 
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: navy;   
+}
 div{
 display: flex;
 justify-content: center;
 //background-image: url("https: //cdn.wallpapersafari.com/58/85/hjPGSd.jpg");
 //background-color: #cccccc;
 //background-image: radial-gradient(rgb(200, 200, 253), navy);
+//margin-top: 100px;
 
 form {
     background-color: $bgColorElement;

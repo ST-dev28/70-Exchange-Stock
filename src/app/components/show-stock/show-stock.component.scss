@@ -1,0 +1,72 @@
+$bgColorElement: #fff;
+$bgColorElement1:navy;
+$bgColorBody: rgb(200, 200, 253);
+$textColor: navy;
+$textColor1:#fff;
+$borderColor: navy;
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: navy;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    //background-image: url("https: //cdn.wallpapersafari.com/58/85/hjPGSd.jpg");
+    //background-color: #cccccc;
+    //background-image: radial-gradient(rgb(200, 200, 253), navy);
+    
+    form {
+        background-color: $bgColorElement;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0px;
+        border: 1px dashed white;
+        padding: 5px;
+        border-radius: 4px;
+        width: 20%;
+        border: 2px solid $borderColor;
+        box-shadow: 10px 10px 20px 3px rgba(1, 1, 156, 0.781);
+        input {
+            color: $textColor;
+            border: 1px solid $borderColor;
+            border-radius: 3px;
+            line-height: 12px;
+            padding: 10px 0px 10px 8px;
+            font-size: 18px;
+            color: $textColor;
+        }
+        select {
+            color: $textColor;
+            border: 1px solid $borderColor;
+            border-radius: 3px;
+            padding: 8px 0px 8px 8px;
+            font-size: 18px;
+            color: $textColor;
+        }
+        input:hover,
+        select:hover {
+            background-color: $bgColorBody;
+        }
+
+        button {
+            color: $textColor1;
+            font-size: 18px;
+            background-color: $bgColorElement1;
+            border: none;
+            border-radius: 3px;
+            line-height: 18px;
+            padding: 10px 30px;
+        }
+        button:hover {
+            background-color: $bgColorBody;
+            color: $textColor;
+        }
+    }
+}
