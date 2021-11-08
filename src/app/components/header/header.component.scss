@@ -6,32 +6,37 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color:  rgb(200, 200, 253);
-    border: 3px solid navy;
+    background-color: navy;
+    border: 5px solid rgb(200, 200, 253);
     border-style: inset;
     border-radius: 10px;
-    height: 60px;
+    height: 80px;
     .list, 
     .add {
         //margin-right: auto;
-        padding: 0 15px 0 15px;
+        padding: 0 10px 0 10px;
         font-size: 18px;
         font-weight: 700;
         //margin-left: 80px;
-        margin-top: 5px;
+        margin-top: 7px;
         font-style: italic;
         text-decoration: none;
         border-radius: 6px;
         border: 3px solid #fff;
-        background-color: navy;
-        height: 50px;
+        background-color: rgb(200, 200, 253);
+        height: 45px;
+        border-style: inset;
     }
     .add{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     a{
         text-decoration: none;
-        color:#fff;
+        color:navy;
+    }
+    .add:hover,
+    .list:hover{
+        background-color: #fff;
     }
 }
          

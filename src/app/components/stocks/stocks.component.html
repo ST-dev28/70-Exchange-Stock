@@ -1,7 +1,113 @@
-<h1>Stock exchange!</h1>
-
-<ul>
+<!--<div>
+    <h1>Stock exchange!</h1>-->
+<!--<ul>
     <li *ngFor="let stock of stocks">{{stock.name}} / {{stock.price}} / {{stock.previousPrice}} / {{stock.favorite}}
         <a [routerLink]="['/stock', stock.code]">Info</a>
     </li>
-</ul>
+</ul>-->
+
+<!--<ul>
+        <ng-container *ngFor="let stock of stocks">
+            <li>Stock name: {{stock.name}}</li>
+            <li>Stock price: {{stock.price}}</li>
+            <li>Stock previous price: {{stock.previousPrice}}</li>
+            <li>{{stock.favorite}}</li>
+            <li>Stock exhange name: {{stock.exchange}}</li>
+            <a [routerLink]="['/stock', stock.code]">Change it</a>
+        </ng-container>
+    </ul>-->
+
+<!--<ng-container *ngFor="let stock of stocks">
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="row">Stock name</th>
+                    <td>{{stock.name}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock price</th>
+                    <td>{{stock.price}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock previous price</th>
+                    <td>{{stock.previousPrice}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock exchange name</th>
+                    <td>{{stock.exchange}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Like or Not</th>
+                    <td>{{stock.favorite}}</td>
+                </tr>
+                <tr>
+                    <th class="link" colspan="2"><a [routerLink]="['/stock', stock.code]">Change it</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </ng-container>
+</div>-->
+
+<!--<h1>Stock exchange!</h1>
+<div class="cards">
+    <ng-container *ngFor="let stock of stocks">
+        <table class="card">
+            <tbody>
+                <tr>
+                    <th scope="row">Stock name</th>
+                    <td>{{stock.name}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock price</th>
+                    <td>{{stock.price}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock previous price</th>
+                    <td>{{stock.previousPrice}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stock exchange name</th>
+                    <td>{{stock.exchange}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Like or Not</th>
+                    <td>{{stock.favorite}}</td>
+                </tr>
+                <tr>
+                    <th class="link" colspan="2"><a [routerLink]="['/stock', stock.code]">Change it</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </ng-container>
+</div>-->
+
+
+<div class="page">
+    <h1>Stock exchange!</h1>
+    <table class="layout display responsive-table">
+        <thead>
+            <tr>
+                <th>Stock name</th>
+                <th>Stock price</th>
+                <th>Stock previuos price</th>
+                <th>Exchange name</th>
+                <th colspan="2">Like or Not</th>
+            </tr>
+        </thead>
+        <ng-container *ngFor="let stock of stocks">
+            <tbody>
+
+                <tr>
+                    <td class="name">{{stock.name}}</td>
+                    <td>{{stock.price}}</td>
+                    <td>{{stock.previousPrice}}</td>
+                    <td>{{stock.exchange}}</td>
+                    <td>{{stock.favorite}}</td>
+                    <td class="actions" colspan="2">
+                        <a [routerLink]="['/stock', stock.code]" class="edit-item" title="Edit">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </ng-container>
+    </table>
+</div>

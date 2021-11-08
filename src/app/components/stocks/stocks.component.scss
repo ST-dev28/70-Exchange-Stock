@@ -1,0 +1,271 @@
+/*div{
+display: flex;
+//justify-content: center;
+//flex-wrap: wrap;
+//flex-direction: column;
+align-items: center;
+
+    h1{
+justify-content: center;
+
+    }
+table {
+    //display: flex;
+    //justify-content: center;
+    table-layout: fixed;
+    //width: 500px;
+    width: 25%;
+    //border-collapse: collapse;
+    //border: 3px solid purple;
+     margin: 0;
+    padding: 0;
+
+
+    tr{
+ background-color: #f8f8f8;
+ border: 1px solid #ddd;
+ padding: .35em;
+        }
+
+        th,
+        td {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+         }
+         .link {
+        text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+        width: 90%;
+    }
+    caption {
+        font-size: 1.3em;
+    }
+    tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+        width: 100%;
+    }
+    td, th {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        //text-align: right;
+        //width: 100%;
+    }
+    td::before {*/
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+   /*    content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    td:last-child {
+        //border-bottom: 0;
+    }
+}*/
+
+/* general styling */
+
+/*body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}*/
+/*.cards {
+    display: grid;
+    max-width: 1200px;
+    margin: 10px auto;
+    grid-gap: 1rem;
+
+    .card {
+        margin-bottom: 30px;
+        background-color: white;
+        color: rgb(4, 56, 105);
+        padding: 0.2rem;
+        height: 18rem;
+        display: flex;
+        flex-direction: row;
+        flex-basis: content;
+        margin: 5px;
+        border: 3px solid rgb(206, 13, 109);
+        border-style: inset;
+
+
+        tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+    width: 100%;
+
+    th,
+td {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.link {
+    text-align: center;
+
+}
+}
+
+
+        }  
+        button {
+            width: 80px;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+            background-color: #ffff;
+            color: rgb(4, 56, 105);
+            cursor: pointer;
+            border: 1px solid rgb(206, 13, 109);
+            border-radius: 8px;
+        }
+        button:hover {
+            background-color: rgb(238, 174, 209);
+            transform: scale(1.05);
+        }
+    }*/
+
+.page {
+    max-width: 60em;
+    margin: 0 auto;
+    color: navy;
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: navy;
+}
+a {
+    color: navy;
+    font-style: italic;
+    font-weight: 600;
+}
+
+thead{
+    font-weight: 600;
+}
+
+
+table th,
+table td {
+    text-align: left;
+}
+
+table.layout {
+    width: 100%;
+    //border-collapse: collapse;
+}
+
+table.display {
+    margin: 1em 0;
+}
+
+table.display th,
+table.display td {
+    border: 1px solid navy;
+    padding: .5em 1em;
+}
+
+table.display th {
+    background: rgb(200, 200, 253);
+}
+
+table.display td {
+    background: #fff;
+}
+
+table.responsive-table {
+    box-shadow: 0 1px 10px rgba(1, 1, 156, 0.781);
+}
+
+@media (max-width: 30em) {
+    table.responsive-table {
+        box-shadow: none;
+    }
+    table.responsive-table thead {
+        display: none;
+    }
+    table.display th,
+    table.display td {
+        padding: .5em;
+    }
+    table.responsive-table td:nth-child(1):before {
+        content: 'Stock name';
+    }
+    table.responsive-table td:nth-child(2):before {
+        content: 'Stock price';
+    }
+    table.responsive-table td:nth-child(3):before {
+    content: 'Stock previous price';
+    }
+    table.responsive-table td:nth-child(4):before {
+        content: 'Exchange name';
+    }
+    table.responsive-table td:nth-child(5):before {
+        content: 'Like or Not';
+    }
+
+    table.responsive-table td:nth-child(1),
+    table.responsive-table td:nth-child(2),
+    table.responsive-table td:nth-child(3),
+    table.responsive-table td:nth-child(4),
+    table.responsive-table td:nth-child(5) {
+        padding-left: 5%;
+    }
+    table.responsive-table td:nth-child(1):before,
+    table.responsive-table td:nth-child(2):before,
+    table.responsive-table td:nth-child(3):before,
+    table.responsive-table td:nth-child(4):before,
+    table.responsive-table td:nth-child(5):before {
+        display: flex;
+        align-items: left;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //position: absolute;
+        left: .5em;
+        font-weight: bold;
+    }
+    table.responsive-table tr,
+    table.responsive-table td {
+        display: block;
+    }
+    table.responsive-table tr {
+        position: relative;
+        margin-bottom: 1em;
+        box-shadow: 0 1px 10px rgba(1, 1, 156, 0.781);
+    }
+    table.responsive-table td {
+        border-top: none;
+    }
+    table.responsive-table td.name {
+        background: rgb(200, 200, 253);
+        border-top: 1px solid rgb(168, 168, 250);
+    }
+    table.responsive-table td.actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}  
+}
