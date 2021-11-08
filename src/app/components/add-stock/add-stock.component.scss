@@ -16,10 +16,6 @@ h1{
 div{
 display: flex;
 justify-content: center;
-//background-image: url("https: //cdn.wallpapersafari.com/58/85/hjPGSd.jpg");
-//background-color: #cccccc;
-//background-image: radial-gradient(rgb(200, 200, 253), navy);
-//margin-top: 100px;
 
 form {
     background-color: $bgColorElement;
@@ -31,8 +27,10 @@ form {
     padding: 5px;
     border-radius: 4px;
     width: 20%;
-    border: 2px solid $borderColor;
-    box-shadow: 10px 10px 20px 3px rgba(1, 1, 156, 0.781);
+    border: 3px solid rgb(220, 223, 252);
+    border-style: inset;
+    //box-shadow: 10px 10px 20px 3px rgba(1, 1, 156, 0.781);
+    box-shadow: 10px 10px 30px 5px #fff;
     
     input {
         color: $textColor;
@@ -40,7 +38,12 @@ form {
         border-radius: 3px;
         line-height: 12px;
         padding: 10px 0px 10px 8px;
+     
+        &.exchange {
+    text-transform: capitalize;
+}
     }
+    
     select {
     color: $textColor;
     border: 1px solid $borderColor;
