@@ -11,13 +11,12 @@ header {
     border-style: inset;
     border-radius: 10px;
     height: 80px;
-    .list, 
-    .add {
-        //margin-right: auto;
+
+    button {
+        //margin: auto;
         padding: 0 10px 0 10px;
         font-size: 18px;
         font-weight: 700;
-        //margin-left: 80px;
         margin-top: 7px;
         font-style: italic;
         text-decoration: none;
@@ -26,10 +25,16 @@ header {
         background-color: rgb(200, 200, 253);
         height: 45px;
         border-style: inset;
+        width: 140px;
     }
-    .add{
-        margin-left: 20px;
+    .add, 
+    .register{
+        margin-left: 10px;
     }
+    .login {
+    margin-left: 10%;
+}
+ 
     a{
         text-decoration: none;
         color:navy;
@@ -38,5 +43,16 @@ header {
     .list:hover{
         background-color: #fff;
     }
+
+
+@media (max-width: 360px) {
+    button {
+        min-width: 65px;
+        font-size: 13px;
+        padding: 0;
+    }
+     .login {
+     margin-left: 3%;
 }
-         
+}
+}

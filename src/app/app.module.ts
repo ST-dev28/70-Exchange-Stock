@@ -9,6 +9,8 @@ import { StocksComponent } from './components/stocks/stocks.component';
 import { AddStockComponent } from './components/add-stock/add-stock.component';
 import { FormsModule } from '@angular/forms';
 import { ShowStockComponent } from './components/show-stock/show-stock.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ShowStockComponent } from './components/show-stock/show-stock.component
     StocksComponent,
     AddStockComponent,
     ShowStockComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

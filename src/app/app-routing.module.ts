@@ -4,6 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { StocksComponent } from './components/stocks/stocks.component';
 import { AddStockComponent } from './components/add-stock/add-stock.component';
 import { ShowStockComponent } from './components/show-stock/show-stock.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
 
@@ -13,11 +16,20 @@ const routes: Routes = [
   },
   {
     path: 'add',
-    component: AddStockComponent
+    component: AddStockComponent,
+    canActivate: [LoginGuard]
   },
   {
     path: 'stock/:code',
     component: ShowStockComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
 ];
 
