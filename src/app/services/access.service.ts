@@ -9,7 +9,9 @@ import { User } from 'src/app/models/user';
 export class AccessService {
   private _token?: string;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+    this._token = window.sessionStorage.getItem("token") || undefined;
+  }
 
   public get isLoggedIn(): boolean {
   return !!this._token;       // !! - pavercia stringa i boolean reiksme
@@ -17,6 +19,8 @@ export class AccessService {
 
   public setToken(token: string): void {
     this._token = token;
+
+    window.sessionStorage.setItem("token", token);
   }
 
   public registerUser(user: User): Observable<Object> {

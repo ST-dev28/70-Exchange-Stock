@@ -31,7 +31,7 @@ form {
     }
     
     input:hover{
-        background-color: $bgColorBody;
+        background-color: rgba(179, 14, 179, 0.26);
     }
 
     input::placeholder {
@@ -41,14 +41,14 @@ form {
     button {
         color: $textColor1;
         font-size: 18px;
-        background-color: $bgColorElement1;
+        background-color: purple;
         border: none;
         border-radius: 3px;
         line-height: 18px;
         padding: 10px 30px;
     }
     button:hover {
-        background-color: $bgColorBody;
+        background-color: rgba(128, 0, 128, 0.349);
         color: $textColor;
     }
     a {

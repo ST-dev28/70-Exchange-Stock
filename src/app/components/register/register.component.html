@@ -1,7 +1,7 @@
 <div>
     <form>
-        <input [(ngModel)]="user.username" placeholder="Username"><br>
-        <input [(ngModel)]="user.password" placeholder="Password" type="password"><br>
+        <input [(ngModel)]="user.username" placeholder="Username" name="username"><br>
+        <input [(ngModel)]="user.password" placeholder="Password" type="password" name="password"><br>
         <button (click)="register()">Register</button>
         <a routerLink="/login">Login</a>
     </form>
