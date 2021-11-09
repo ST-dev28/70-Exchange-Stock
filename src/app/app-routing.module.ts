@@ -21,7 +21,8 @@ const routes: Routes = [
   },
   {
     path: 'stock/:code',
-    component: ShowStockComponent
+    component: ShowStockComponent,
+    canActivate: [LoginGuard]
   },
   {
     path: 'login',
