@@ -9,10 +9,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
-
+{
+    path: 'login',
+    component: LoginComponent
+  },
   {
-    path: '',
-    component: StocksComponent
+    path: 'register',
+    component: RegisterComponent
   },
   {
     path: 'add',
@@ -25,13 +28,10 @@ const routes: Routes = [
     canActivate: [LoginGuard]
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: '',
+    component: StocksComponent,
   },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
+  
 ];
 
 @NgModule({
