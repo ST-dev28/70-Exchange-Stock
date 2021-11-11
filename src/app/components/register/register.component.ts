@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NotificationType } from 'src/app/models/notification';
 import { User } from 'src/app/models/user';
-import { AccessService } from 'src/app/services/access.service';
+import { AccessService } from 'src/app/services/access/access.service';
 
 @Component({
   selector: 'app-register',

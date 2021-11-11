@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {  CanActivate, Router } from '@angular/router';
-import { AccessService } from '../services/access.service';
+import { AccessService } from '../services/access/access.service';
 
 // ng generate guard guards/pavadinimas
 @Injectable({
